@@ -16,10 +16,11 @@ public class Example {
         //Printing digits of a three-digit number
         int num = 999;
         System.out.println(num / 100);
-        num = num % 100;
+        num %= 100;
         System.out.println(num / 10);
-        num = num % 10;
+        num %= 10;
         System.out.println(num);
 
+        System.out.println((char) 97);
     }
 }
