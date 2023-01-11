@@ -11,10 +11,10 @@ public class FindTheFontInArray {
         while (cond) {
             if (font == array[i]) {
                 System.out.println("The corresponding font index is " + i);
-                cond = false;
+                break;
             } else if (i == array.length -1){
                 System.out.println("The font not found ");
-                cond = false;
+                break;
         }
             i++;
     }
