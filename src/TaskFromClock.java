@@ -14,7 +14,7 @@ public class TaskFromClock {
                     System.out.println("It is round our");
                     break;
             }
-        }else {
+        } else {
             System.out.println("Don't correct number");
             System.exit(1);
         }

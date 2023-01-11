@@ -6,7 +6,7 @@ public class MonthDays {
         System.out.println("Type the month number between 1-12: ");
         int month = scanner.nextInt();
         int days;
-        if (month > 0 && month < 13){
+        if (month > 0 && month < 13) {
             switch (month) {
                 case 1, 3, 5, 7, 8, 10, 12:
                     days = 31;

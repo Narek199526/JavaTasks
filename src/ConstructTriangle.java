@@ -5,7 +5,7 @@ public class ConstructTriangle {
         Scanner scanner = new Scanner(System.in);
         int a, b, c;
         System.out.println("Type the sides size");
-        a  = scanner.nextInt();
+        a = scanner.nextInt();
         b = scanner.nextInt();
         c = scanner.nextInt();
         if (a > 0 && b > 0 && c > 0) {

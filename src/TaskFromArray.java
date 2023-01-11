@@ -1,30 +1,30 @@
 public class TaskFromArray {
     public static void main(String[] args) {
-        double input[] = {-5.3, -6.1, -4.5, -9.8, -1.4};
-        double output[] = new double[5];
+        double input[] = {-5.3, 6.1, 0, 9.8, -1.4};
+        double output[] = new double[input.length];
         int i = 0;
         int j = 0;
-        if (input[i] >=0){
+        if (input[i] >= 0) {
             output[j] = input[i];
             j++;
         }
         i++;
-        if (input[i] >=0){
+        if (input[i] >= 0) {
             output[j] = input[i];
             j++;
         }
         i++;
-        if (input[i] >=0){
+        if (input[i] >= 0) {
             output[j] = input[i];
             j++;
         }
         i++;
-        if (input[i] >=0){
+        if (input[i] >= 0) {
             output[j] = input[i];
             j++;
         }
         i++;
-        if (input[i] >=0){
+        if (input[i] >= 0) {
             output[j] = input[i];
             j++;
         }
@@ -40,4 +40,5 @@ public class TaskFromArray {
         System.out.print(output[3] + ", ");
         System.out.print(output[4]);
     }
+
 }
