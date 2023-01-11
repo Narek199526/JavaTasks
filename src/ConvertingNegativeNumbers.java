@@ -5,7 +5,7 @@ public class ConvertingNegativeNumbers {
         System.out.print("The arr members are ");
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < 0){
-                 arr[i] = -1 * arr[i];
+                 arr[i] = Math.abs(arr[i]);
                  num++;
             }
             System.out.print(arr[i] + ", ");
