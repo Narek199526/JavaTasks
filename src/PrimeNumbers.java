@@ -1,6 +1,6 @@
 public class PrimeNumbers {
     public static void main(String[] args) {
-        int array[] = {6, 1, 4, 8, 7, 9, 12};
+        int array[] = {6, 1, 4, 8, 9, 12};
         boolean cond = false;
         for (int i = 0; i < array.length; i++) {
             int num = 0;
