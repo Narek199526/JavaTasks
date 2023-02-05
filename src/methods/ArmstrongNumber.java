@@ -2,7 +2,7 @@ package methods;
 
 public class ArmstrongNumber {
     public static void main(String[] args) {
-        int num = 158;
+        int num = 1;
         if (numberArmstrong(num))System.out.println(num + " is armstrong");
          else System.out.println(num + " isn't armstrong");
     }
