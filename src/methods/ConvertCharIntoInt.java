@@ -19,22 +19,23 @@ public class ConvertCharIntoInt {
 
     public static void main(String[] args) {
         char[] array ={'a', 'g', '#', 'j', 'a'};
-        convertCharIntoInt(array);
-        convertIntIntoChar(convertCharIntoInt(array));
+        int[] convertArrayCharIntoInt = convertCharIntoInt(array);
+        char[] convertArrayIntIntoChar = convertIntIntoChar(convertArrayCharIntoInt);
         System.out.print("The initial array { ");
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + ", ");
         }
         System.out.println("}");
         System.out.print("The received array from converting char into int { ");
-        for (int i = 0; i < convertCharIntoInt(array).length; i++) {
-            System.out.print(convertCharIntoInt(array)[i] + ", ");
+        for (int i = 0; i < convertArrayCharIntoInt.length; i++) {
+            System.out.print(convertArrayCharIntoInt[i] + ", ");
         }
         System.out.println("}");
         System.out.print("The received array from converting int into char { ");
-        for (int i = 0; i < convertIntIntoChar(convertCharIntoInt(array)).length; i++) {
-            System.out.print(convertIntIntoChar(convertCharIntoInt(array))[i] + ", ");
+        for (int i = 0; i < convertArrayIntIntoChar.length; i++) {
+            System.out.print(convertArrayIntIntoChar[i] + ", ");
         }
         System.out.println("}");
+
     }
 }
