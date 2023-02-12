@@ -19,23 +19,35 @@ public class ConvertCharIntoInt {
 
     public static void main(String[] args) {
         char[] array ={'a', 'g', '#', 'j', 'a'};
+        boolean cnd = true;
         int[] convertArrayCharIntoInt = convertCharIntoInt(array);
         char[] convertArrayIntIntoChar = convertIntIntoChar(convertArrayCharIntoInt);
-        System.out.print("The initial array { ");
+//        System.out.print("The initial array { ");
+//        for (int i = 0; i < array.length; i++) {
+//            System.out.print(array[i] + ", ");
+//        }
+//        System.out.println("}");
+//        System.out.print("The received array from converting char into int { ");
+//        for (int i = 0; i < convertArrayCharIntoInt.length; i++) {
+//            System.out.print(convertArrayCharIntoInt[i] + ", ");
+//        }
+//        System.out.println("}");
+//        System.out.print("The received array from converting int into char { ");
+//        for (int i = 0; i < convertArrayIntIntoChar.length; i++) {
+//            System.out.print(convertArrayIntIntoChar[i] + ", ");
+//        }
+//        System.out.println("}");
         for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + ", ");
+            if (array[i] != convertArrayIntIntoChar[i]){
+                cnd = false;
+                break;
+            }
         }
-        System.out.println("}");
-        System.out.print("The received array from converting char into int { ");
-        for (int i = 0; i < convertArrayCharIntoInt.length; i++) {
-            System.out.print(convertArrayCharIntoInt[i] + ", ");
+        if (cnd){
+            System.out.println("your code works");
+        }else {
+            System.out.println("your code does not work");
         }
-        System.out.println("}");
-        System.out.print("The received array from converting int into char { ");
-        for (int i = 0; i < convertArrayIntIntoChar.length; i++) {
-            System.out.print(convertArrayIntIntoChar[i] + ", ");
-        }
-        System.out.println("}");
 
     }
 }
