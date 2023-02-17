@@ -16,7 +16,7 @@ public class GasStove {
         if (countElectronicBurners >= 1 && countElectronicBurners <= 3) {
             electricBurners = countElectronicBurners;
         } else {
-            System.out.println("You can't have gaz stove with these electronic burners parameters");
+           System.exit(1);
         }
     }
     public int getElectricBurners() {
@@ -27,7 +27,7 @@ public class GasStove {
         if (countGasBurners >= 3 && countGasBurners <= 5) {
             gasBurners = countGasBurners;
         } else {
-            System.out.println("You can't have gaz stove with these gas burners parameters");
+            System.exit(1);
         }
     }
     public int getGazBurners() {

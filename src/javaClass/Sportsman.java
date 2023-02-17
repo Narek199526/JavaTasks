@@ -1,6 +1,7 @@
 package javaClass;
 
 public class Sportsman {
+    private int[] points;
     private int pointsFromRunning;
     private int aScoreFromPullUps;
     private int pointsFromSwimming;
@@ -8,6 +9,7 @@ public class Sportsman {
 
     // constrictor for sportsman
     Sportsman(int running, int pullUps, int swimming, int jumping){
+
         setPointsFromRunning(running);
         setAScoreFromPullUps(pullUps);
         setPointsFromSwimming(swimming);
@@ -19,7 +21,7 @@ public class Sportsman {
         if(pointsFromRunning >= 50 && pointsFromRunning <= 100){
             this.pointsFromRunning = pointsFromRunning;
         }else {
-            System.out.println("There is no such point");
+            System.exit(1);
         }
     }
     public int getPointsFromRunning() {
@@ -32,7 +34,7 @@ public class Sportsman {
         if (aScoreFromPullUps >= 50 && aScoreFromPullUps <= 100) {
             this.aScoreFromPullUps = aScoreFromPullUps;
         }else{
-            System.out.println("There is no such point");
+            System.exit(1);
         }
     }
     public int getaScoreFromPullUps() {
@@ -45,7 +47,7 @@ public class Sportsman {
         if (pointsFromSwimming >= 50 && pointsFromSwimming <= 100) {
             this.pointsFromSwimming = pointsFromSwimming;
         }else {
-            System.out.println("There is no such point");
+            System.exit(1);
         }
     }
     public int getPointsFromSwimming() {
@@ -65,8 +67,18 @@ public class Sportsman {
     public double scoreAverage (){
         double count = 0;
         if (pointsFromRunning > 0 && aScoreFromPullUps > 0 && pointsFromSwimming > 0 && pointsFromJumping > 0){
-            count = (pointsFromRunning + aScoreFromPullUps + pointsFromSwimming + pointsFromJumping) / 2;
+            count = (pointsFromRunning + aScoreFromPullUps + pointsFromSwimming + pointsFromJumping) / 4;
         }
         return count;
+    }
+    //equal method
+     public int equal(Sportsman sportsman, Sportsman sportsman1){
+        if (sportsman.scoreAverage() > sportsman1.scoreAverage()){
+            return 1;
+        }else if (sportsman.scoreAverage() < sportsman1.scoreAverage()) {
+            return -1;
+        }else {
+            return 0;
+        }
     }
 }
