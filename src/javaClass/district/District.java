@@ -11,7 +11,10 @@ public class District {
 
     // getter setter for area
     public void setGardenArea(int gardenArea) {
-        this.gardenArea = gardenArea;
+        if (gardenArea > 0) {
+            this.gardenArea = gardenArea;
+        }else
+            System.exit(1);
     }
     public int getGardenArea() {
         return gardenArea;

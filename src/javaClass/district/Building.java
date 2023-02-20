@@ -5,7 +5,7 @@ import java.util.Base64;
 public class Building {
     private int floorsOfBuildings;
     private String buildingsType;
-    private int[] numbersOfTwoRoomApartment = new int[floorsOfBuildings * 2];
+   private int[] numbersOfTwoRoomApartment;
     private int[] numbersOFThreeRoomApartment;
 
     Building(String buildingsType, int floorsOfBuildings) {
@@ -25,29 +25,25 @@ public class Building {
 
     // getter setter for floors of buildings
    public void setFloorsOfBuildings(int count) {
-        floorsOfBuildings = count;
+        if (count > 0) {
+            floorsOfBuildings = count;
+        }else
+            System.exit(1);
     }
 
     public int getFloorsOfBuildings() {
         return floorsOfBuildings;
     }
 
-    //getters for apartments number
-    public int[] getNumbersOfTwoRoomApartment() {
-        return numbersOfTwoRoomApartment;
-    }
 
-    public int[] getNumbersOFThreeRoomApartment() {
-        return numbersOFThreeRoomApartment;
-    }
 
 
     //   method for saving apartment numbers
     public void theApartmentNumbers(Building building) {
-        int numbersOfTwoRoom = 1;
-        int numbersOfThreeRoom = 1;
+        int numbersOfTwoRoom = 0;
+        int numbersOfThreeRoom = 0;
         for (int i = 0; i < (building.floorsOfBuildings * 4) ; i++) {
-            if (i / 2 == 0) {
+            if (i % 2 == 0) {
                 numbersOfTwoRoomApartment[numbersOfTwoRoom] = i + 2;
                 numbersOfTwoRoom++;
             } else {

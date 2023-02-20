@@ -72,10 +72,10 @@ public class Sportsman {
         return count;
     }
     //equal method
-     public int equal(Sportsman sportsman, Sportsman sportsman1){
-        if (sportsman.scoreAverage() > sportsman1.scoreAverage()){
+     public int equal(Sportsman sportsman){
+        if (this.scoreAverage() > sportsman.scoreAverage()){
             return 1;
-        }else if (sportsman.scoreAverage() < sportsman1.scoreAverage()) {
+        }else if (this.scoreAverage() < sportsman.scoreAverage()) {
             return -1;
         }else {
             return 0;

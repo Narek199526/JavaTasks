@@ -27,7 +27,7 @@ public class Main {
             System.out.println("The 'sportsman" + index + "' score average is " + array[i].scoreAverage());
             index++;
         }
-        System.out.println(sportsman1.equal(sportsman3, sportsman3));
+        System.out.println(sportsman1.equal(sportsman3));
     }
 }
 

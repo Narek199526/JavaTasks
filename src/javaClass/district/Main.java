@@ -10,12 +10,6 @@ public class Main {
         };
         District district = new District(buildings, 166);
         System.out.println(district.availableArea());
-        //building.theApartmentNumbers(building);
- //       int arr[] = new int[building.getNumbersOfTwoRoomApartment().length];
-//        System.out.println(arr.length);
-//        System.out.println(building.getFloorsOfBuildings());
-//        for (int i = 0; i < arr.length; i++) {
-//            System.out.print(arr[i] + " ");
-//        }
+
     }
 }
