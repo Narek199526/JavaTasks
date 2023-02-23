@@ -1,3 +1,5 @@
+package oldTasks;
+
 public class TaskFromArray {
     public static void main(String[] args) {
         double input[] = {-5.3, 6.1, 0, 9.8, -1.4};

@@ -1,3 +1,5 @@
+package oldTasks;
+
 public class ConvertingNegativeNumbers {
     public static void main(String[] args) {
         int arr[] = {1, 8, -6, -5, -3, 9, 45};

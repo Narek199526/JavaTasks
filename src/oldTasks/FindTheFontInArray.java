@@ -1,3 +1,5 @@
+package oldTasks;
+
 import java.util.Scanner;
 
 public class FindTheFontInArray {

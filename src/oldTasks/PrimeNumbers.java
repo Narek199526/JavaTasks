@@ -1,3 +1,5 @@
+package oldTasks;
+
 public class PrimeNumbers {
     public static void main(String[] args) {
         int array[] = {6, 1, 4, 8, 9, 12};

@@ -1,3 +1,5 @@
+package oldTasks;
+
 public class Example {
     public static void main(String[] args) {
        // The sum of a and b squares

@@ -1,3 +1,5 @@
+package oldTasks;
+
 public class ConvertBinaryNumberWithDecimal {
     public static void main(String[] args) {
         int binaryArray[] = {0, 0, 1,};

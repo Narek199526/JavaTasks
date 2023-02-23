@@ -2,7 +2,7 @@ package javaClass.commonDenominator;
 
 public class CommonDenominator {
     public static void main(String[] args) {
-        int[] array = {4, 16, 8, 32, 1};
+        int[] array = {21, 105};
         int num = 0;
         int likelyBiggestDivider = theSmallestNumberInArray(array);
 

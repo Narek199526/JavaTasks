@@ -1,3 +1,5 @@
+package oldTasks;
+
 public class nestedArray {
     public static void main(String[] args) {
         int[][] nestedArray ={{1, 2, 3, 4, 5},{15, 65, 98, 56,}, {42, 69, 45}};

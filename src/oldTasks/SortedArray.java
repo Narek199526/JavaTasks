@@ -1,3 +1,5 @@
+package oldTasks;
+
 public class SortedArray {
     public static void main(String[] args) {
         int[] arr1 = {1, 2, 5, -8, 0, -9, 6, -38};
