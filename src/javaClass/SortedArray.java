@@ -1,5 +1,7 @@
 package javaClass;
 
+import javaClass.commonDenominator.Test;
+
 public class SortedArray {
     public static void main(String[] args) {
         int[] array ={5, -23, 12, 5, 5, 12, -23, 5, 12, -23};
