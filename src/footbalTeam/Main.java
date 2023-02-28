@@ -2,30 +2,16 @@ package footbalTeam;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Player one");
-        FootballTeam player1 = new FootballTeam("Marc-Andre ter Stegen");
-        System.out.println("Name surname - " + player1.getName());
-        System.out.println("Nationality - " + player1.getPlayersNationality());
-        System.out.println( "Age - " + player1.getPlayersAge());
-        System.out.println("Playing position - " + player1.getPlayersPlayingPosition());
-        System.out.println("Playing number - " + player1.getPlayersPlayingNumber());
-
-        System.out.println("\nPlayer two");
-
-        FootballTeam player2 = new FootballTeam("Jules Kounde");
-        System.out.println("Name surname - " + player2.getName());
-        System.out.println("Nationality - " + player2.getPlayersNationality());
-        System.out.println( "Age - " + player2.getPlayersAge());
-        System.out.println("Playing position - " + player2.getPlayersPlayingPosition());
-        System.out.println("Playing number - " + player2.getPlayersPlayingNumber());
-
-        System.out.println("\nPlayer three");
-
-        FootballTeam player3 = new FootballTeam("Alejandro Balde");
-        System.out.println("Name surname - " + player3.getName());
-        System.out.println("Nationality - " + player3.getPlayersNationality());
-        System.out.println( "Age - " + player3.getPlayersAge());
-        System.out.println("Playing position - " + player3.getPlayersPlayingPosition());
-        System.out.println("Playing number - " + player3.getPlayersPlayingNumber());
+        FootballTeam MarcAndreTerStegen = new FootballTeam("Marc-Andre ter Stegen", "Germany", "Goalkeeper", 30, 1);
+        FootballTeam JulesKunde = new FootballTeam("Jules Kunde", "France", "Right-back", 24, 23);
+        FootballTeam RonaldAruajo = new FootballTeam("Ronald Aruajo", "Uruguay", "Centre-back", 23, 4);
+        FootballTeam AndreasChristensen = new FootballTeam("Andreas Christensen", "Denmark", "Center-Back", 26, 15);
+        FootballTeam AlejandroBalde = new FootballTeam("Alejandro Balde", "Spain", "Left-back", 19, 28);
+        FootballTeam FranckKessie = new FootballTeam("Franck Kessie", "Italy", "Right midfield", 26, 19);
+        FootballTeam SergioBasquets = new FootballTeam("Sergio Basquets", "Spain", "Defensive Midfield", 34, 5);
+        FootballTeam FrankiDeJong = new FootballTeam("Frankie de Jong", "Netherlands", "Left Midfield", 25, 21);
+        FootballTeam FeranTores = new FootballTeam("Feran Tores", "Spain", "Left winger", 22, 11);
+        FootballTeam RobertLewandowski = new FootballTeam("Robert Lewandowski", "Poland", "Centre-Forward", 34, 9);
+        FootballTeam OusmaneDembele = new FootballTeam("Ousmane Dembele", "France", "Right winger", 25, 7);
     }
 }
