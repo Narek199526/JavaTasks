@@ -12,7 +12,7 @@ public class FootballTeam {
         this.playersPlayingPosition = playersPlayingPosition;
         this.playersAge = playersAge;
         this.playersPlayingNumber = playersPlayingNumber;
-    }gi
+    }
 
    //Getter for player name
     public String getPlayersName (){
