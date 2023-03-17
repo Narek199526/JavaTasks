@@ -4,6 +4,14 @@ public class Person {
    private String name, surname, address;
    private int age, phoneNumber;
 
+   Person(String name, String surname, String address, int age, int phoneNumber){
+       setName(name);
+       setSurname(surname);
+       setAddress(address);
+       setAge(age);
+       setPhoneNumber(phoneNumber);
+   }
+
 
    public void setName(String name){
        this.name = name;
@@ -30,7 +38,10 @@ public class Person {
 
 
     public void setAge(int age) {
-        this.age = age;
+       if (age > 0 && age < 150) {
+           this.age = age;
+       }else System.exit(1);
+
     }
     public int getAge() {
         return age;

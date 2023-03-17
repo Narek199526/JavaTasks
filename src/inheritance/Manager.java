@@ -5,13 +5,7 @@ public class Manager  extends Employee{
 
 
     Manager(String name, String surname, String address, int age, int phoneNumber, String specialization, int salary, String department){
-        setName(name);
-        setSurname(surname);
-        setAddress(address);
-        setAge(age);
-        setPhoneNumber(phoneNumber);
-        setSpecialization(specialization);
-        setSalary(salary);
+        super(name, surname,  address, age, phoneNumber, specialization, salary);
         setDepartment(department);
     }
 
