@@ -1,4 +1,4 @@
-package inheritance;
+package inheritance.person;
 
 public class Person {
    private String name, surname, address;

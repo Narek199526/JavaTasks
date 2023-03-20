@@ -1,4 +1,6 @@
-package inheritance;
+package inheritance.person;
+
+import inheritance.person.Person;
 
 class Employee extends Person {
     private String specialization;

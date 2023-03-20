@@ -1,6 +1,8 @@
-package inheritance;
+package inheritance.person;
 
-public class Manager  extends Employee{
+import inheritance.person.Employee;
+
+public class Manager  extends Employee {
     String department;
 
 
