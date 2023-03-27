@@ -4,7 +4,7 @@ public class Gold extends Standart{
     private int amountForLunch = 100000;
    private int bonusPoint;
 
-   Gold(String name,String lastName, long cardNumber, int expirationYear){
+   Gold(String name,String lastName, String cardNumber, int expirationYear){
        super(name, lastName, cardNumber, expirationYear);
    }
     private int lunchPayment (int amount) {
@@ -18,12 +18,9 @@ public class Gold extends Standart{
 
     @Override
     public int getMany(int amount){
-        if (amount > 0 && amount <= balance) {
-            balance -= amount;
-            bonusPoint += 2;
-            return amount;
-        }else System.exit(1);
-        return 0;
+        super.getMany(amount);
+        bonusPoint += 2;
+        return amount;
     }
 
     public int getBonusPoint() {

@@ -3,7 +3,7 @@ package bankCard;
 public class Business extends Standart {
     boolean cnd = true;
 
-    Business(String name,String lastName, long cardNumber, int expirationYear){
+    Business(String name,String lastName, String cardNumber, int expirationYear){
         super(name, lastName, cardNumber, expirationYear);
     }
 
@@ -14,8 +14,8 @@ public class Business extends Standart {
         }
     }
     @Override
-    public void onlineShop(double amount){
-        if (amount > 0 && amount < balance){
+    public void onlineShop(double amount) {
+        if (amount > 0 && amount < balance) {
             balance -= (amount - (amount / 10));
         } else {
             System.exit(1);
