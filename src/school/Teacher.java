@@ -3,25 +3,25 @@ package school;
 public class Teacher {
     protected String name;
     protected String lastName;
-    protected double salary = 150000;
-    protected double coefficient;
+    protected double salary;
 
-    Teacher(String name, String lastName, double coefficient) {
+    Teacher(String name, String lastName, double salary) {
         this.name = name;
         this.lastName = lastName;
-        this.coefficient = coefficient;
-        printSalary();
+        setSalary(salary);
     }
 
-    public double getSalary(double coefficient) {
-        if (coefficient > 0 && coefficient <= 2) {
-            return salary * coefficient;
-        } else System.exit(1);
-        return 0;
+    public void setSalary(double salary) {
+        if (salary > 0){
+        this.salary = salary;
+        }
+        else System.exit(1);
     }
 
-    public void printSalary() {
-        System.out.println("The teacher salary is " + getSalary(coefficient));
+    public double getSalary() {
+        return salary;
     }
+
+
 
 }
