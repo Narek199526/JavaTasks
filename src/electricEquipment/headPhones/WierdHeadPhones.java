@@ -1,6 +1,7 @@
 package electricEquipment.headPhones;
 
 import electricEquipment.Card;
+import electricEquipment.ElectricShop;
 
 public class WierdHeadPhones extends Headphones{
     WierdHeadPhones(String model, String name, double costPrice){
@@ -10,8 +11,8 @@ public class WierdHeadPhones extends Headphones{
     public void cashSel() {
         if (cnd) {
             double selPrice = getSalePrice(this.costPrice);
-            income += selPrice;
-            profit += (selPrice - this.costPrice);
+            ElectricShop.income += selPrice;
+            ElectricShop.profit += (selPrice - this.costPrice);
         }
         cnd = false;
     }
@@ -20,7 +21,7 @@ public class WierdHeadPhones extends Headphones{
     public void payFromCard(Card ob) {
         if (cnd) {
             double selPrice = getSalePrice(this.costPrice);
-            income += ob.payFromCard(this.costPrice);
+            ElectricShop.income += ob.payFromCard(this.costPrice);
         }
         cnd = false;
     }
@@ -29,8 +30,8 @@ public class WierdHeadPhones extends Headphones{
     public void creditSel() {
         if (cnd) {
             double selPrice = getSalePrice(this.costPrice) + (salePrice / 20);
-            income += selPrice;
-            profit += (selPrice - this.costPrice);
+            ElectricShop.income += selPrice;
+            ElectricShop.profit += (selPrice - this.costPrice);
         }
         cnd = false;
     }

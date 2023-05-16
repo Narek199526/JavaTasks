@@ -2,6 +2,7 @@ package electricEquipment.tvSet;
 
 import electricEquipment.Card;
 import electricEquipment.ElectricEquipment;
+import electricEquipment.ElectricShop;
 
 public  class TVSet extends ElectricEquipment {
     protected int diagonalLine;
@@ -22,8 +23,8 @@ public  class TVSet extends ElectricEquipment {
     public void cashSel() {
         if (cnd) {
             double selPrice = getSalePrice(this.costPrice);
-            income += selPrice;
-            profit += (selPrice - this.costPrice);
+            ElectricShop.income += selPrice;
+            ElectricShop.profit += (selPrice - this.costPrice);
         }
         cnd = false;
     }
@@ -32,7 +33,7 @@ public  class TVSet extends ElectricEquipment {
     public void payFromCard(Card ob) {
         if (cnd) {
             double selPrice = getSalePrice(this.costPrice);
-            income += ob.payFromCard(this.costPrice);
+            ElectricShop.income += ob.payFromCard(this.costPrice);
         }
         cnd = false;
     }
@@ -41,8 +42,8 @@ public  class TVSet extends ElectricEquipment {
     public void creditSel() {
         if (cnd) {
             double selPrice = getSalePrice(this.costPrice) + (salePrice / 5);
-            income += selPrice;
-            profit += (selPrice - this.costPrice);
+            ElectricShop.income += selPrice;
+            ElectricShop.profit += (selPrice - this.costPrice);
         }
         cnd = false;
     }

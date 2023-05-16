@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         Card gold = new Card();
         gold.setBalance(10000000);
-        ElectricShop equipment;
+        ElectricEquipment equipment;
 
         Dell dell = new Dell("Laptop", "Dell", 300000, 8, "256 SSD");
         equipment = dell;

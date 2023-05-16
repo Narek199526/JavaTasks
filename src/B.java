@@ -1,6 +1,12 @@
-public class B extends A{
-    double c;
-    B(){
+public class B {
+    public void collBack(int a) {
 
     }
+
+    void move(){
+
+    }
+
+    double c;
+
 }

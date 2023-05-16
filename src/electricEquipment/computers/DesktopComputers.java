@@ -1,6 +1,7 @@
 package electricEquipment.computers;
 
 import electricEquipment.Card;
+import electricEquipment.ElectricShop;
 
 public  class DesktopComputers extends Computers {
     DesktopComputers(String model, String name, double costPrice, int ram, String procesor) {
@@ -11,8 +12,8 @@ public  class DesktopComputers extends Computers {
     public void cashSel() {
         if (cnd) {
             double selPrice = getSalePrice(this.costPrice);
-            income += selPrice;
-            profit += (selPrice - this.costPrice);
+            ElectricShop.income += selPrice;
+            ElectricShop.profit += (selPrice - this.costPrice);
         }
         cnd = false;
     }
@@ -21,7 +22,7 @@ public  class DesktopComputers extends Computers {
     public void payFromCard(Card ob) {
         if (cnd) {
             double selPrice = getSalePrice(this.costPrice);
-            income += ob.payFromCard(this.costPrice);
+            ElectricShop.income += ob.payFromCard(this.costPrice);
         }
         cnd = false;
     }
@@ -30,8 +31,8 @@ public  class DesktopComputers extends Computers {
     public void creditSel() {
         if (cnd) {
             double selPrice = getSalePrice(this.costPrice) + (salePrice / 10);
-            income += selPrice;
-            profit += (selPrice - this.costPrice);
+            ElectricShop.income += selPrice;
+            ElectricShop.profit += (selPrice - this.costPrice);
         }
         cnd = false;
     }
