@@ -23,5 +23,16 @@ public class SortedCollection {
         System.out.println(arrayList);
         arrayList.clear();
         System.out.println(arrayList);
+
+
+
+
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
+        //priorityQueue.add(5);
+        priorityQueue.add(3);
+        priorityQueue.add(2);
+        priorityQueue.add(7);
+        priorityQueue.add(1);
+        System.out.println(priorityQueue);
     }
 }
